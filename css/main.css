@@ -139,7 +139,7 @@ display: block;
 /* Inhalt */
 
 .inhalt{
-    margin: 0 15%;
+    margin: 0 10%;
     padding: 2em 0;
     min-height: 90vh;
     display: flex;
@@ -154,6 +154,7 @@ display: block;
     text-align: justify;
     hyphens: auto;
     margin: 2rem 0;
+    line-height: 2rem;
 }
 
 #zitat{
