@@ -46,12 +46,21 @@ nav>ul>li>a{
     margin: 0 20px;
 }
 
+
+
 li:hover{
-    background-color: rgb(107, 105, 105);
+    background-color: #fdfcc4;
+    color: black;
 }
+
+li:hover a{
+    color: black;
+}
+
 
 li:hover #workshop--dropdown{
 display: block;
+
 }
 
 #dropdown--arrow{
@@ -73,6 +82,7 @@ display: block;
     text-decoration: none;
 }
 
+
 .dropdown--menu{
     padding: 1em;
 }
@@ -83,8 +93,11 @@ display: block;
 }
 
 .dropdown--menu:hover{
-    background-color: rgb(107, 105, 105);
+    background-color: #fdfcc4;
+    color: black;
 }
+
+
 
 
 
@@ -137,7 +150,7 @@ display: block;
 }
 
 .inhalt p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: justify;
     hyphens: auto;
     margin: 2rem 0;
@@ -238,7 +251,8 @@ footer a {
 }
 
 .footer--button:hover{
-    background-color: rgb(107, 105, 105);
+    background-color: #fdfcc4;
+    color: black;
     
 }
 
