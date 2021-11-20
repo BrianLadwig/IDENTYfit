@@ -144,7 +144,7 @@ display: block;
 
 #zitat{
     background-color: #fadc9c9c;
-    width: 60em;
+    width: 50em;
     padding: 0.3em;
     border-left: 4px solid black;
 }
@@ -197,7 +197,7 @@ input[type=text], input[type=email], textarea, input[type=checkbox], button {
    
 
 form button{
-    width: 30%;
+    width: 10em;
        
 }
 
