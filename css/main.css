@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(255, 255, 255);
     min-height: 100vh;
 }
 
@@ -36,7 +36,7 @@ nav>ul>li{
     font-weight: bold;
     list-style: none;
     display: inline;
-    color: rgb(221, 221, 221);
+    color: rgb(255, 255, 255);
       
 }
 
@@ -75,6 +75,7 @@ display: block;
     right: 16.2em;
     top: 3.5em;
     display: none;
+    border: 2px solid black;
 }
 
 #workshop--dropdown a{
@@ -87,9 +88,10 @@ display: block;
     padding: 1em;
 }
 
-.dropdown--menu:nth-child(2){
-    border-top: 1px solid rgb(231, 230, 230);
-    border-bottom: 1px solid rgb(231, 230, 230);
+#dropdown--menu--2{
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    
 }
 
 .dropdown--menu:hover{
@@ -167,7 +169,7 @@ button{
     font-size: 1.2rem;
     border: none;
     background-color: #070707;
-    color: #fdfcc4;
+    color: #ffffff;
     padding: 1em;
     font-weight: bolder;
     cursor: pointer;
@@ -175,6 +177,10 @@ button{
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.11);
 }
 
+button:hover{
+    background-color:#fdfcc4;
+    color: black;
+}
 
 
 /* form */
