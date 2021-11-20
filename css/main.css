@@ -9,6 +9,7 @@
 
 body{
     background-color: whitesmoke;
+    min-height: 100vh;
 }
 
 
@@ -91,9 +92,9 @@ display: block;
 .home>h1{display: none;}
 
 .home{
-    min-height: 91.6vh;
+    min-height: 91.2vh;
     padding-top: 70px;
-    background-color: #fadc9c;
+    background-color: #fdfcc4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,12 +102,12 @@ display: block;
 }
 
 #logoText{
-    width: 30%;
+    width: 25%;
 }
 
 #arrow{
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
     color: rgba(102, 102, 102, 0.842);
     position: relative;
     animation-name: arrow--up--down;
@@ -125,7 +126,7 @@ display: block;
 /* Inhalt */
 
 .inhalt{
-    margin: 0 20%;
+    margin: 0 15%;
     padding: 2em 0;
     min-height: 90vh;
     display: flex;
@@ -138,22 +139,21 @@ display: block;
 .inhalt p{
     font-size: 1.5rem;
     text-align: justify;
-	text-align-last: none;
+    hyphens: auto;
     margin: 2rem 0;
 }
 
 #zitat{
-    background-color: #fadc9c9c;
-    width: 50em;
+    background-color: #fdfcc4;
     padding: 0.3em;
-    border-left: 4px solid black;
+    
 }
 
 button{
     font-size: 1.2rem;
     border: none;
-    background-color: rgb(255, 100, 73);
-    color: white;
+    background-color: #070707;
+    color: #fdfcc4;
     padding: 1em;
     font-weight: bolder;
     cursor: pointer;
