@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+
+
+
+/* Nav-Bar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    padding: 10px 70px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+nav a img{height: 60px;}
+
+
+nav>ul>li{
+    padding: 1em;
+    font-weight: bold;
+    list-style: none;
+    display: inline;
+    color: rgb(221, 221, 221);
+      
+}
+
+nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+li:hover{
+    background-color: rgb(107, 105, 105);
+}
+
+li:hover #workshop--dropdown{
+display: block;
+}
+
+#dropdown--arrow{
+    color: rgb(167, 162, 162);
+}
+
+#workshop--dropdown{
+    font-size: 1.2rem;
+    list-style: none;
+    background-color: rgb(31, 30, 30);
+    position: absolute;
+    right: 16.2em;
+    top: 3.5em;
+    display: none;
+}
+
+#workshop--dropdown a{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown--menu{
+    padding: 1em;
+}
+
+.dropdown--menu:nth-child(2){
+    border-top: 1px solid rgb(231, 230, 230);
+    border-bottom: 1px solid rgb(231, 230, 230);
+}
+
+.dropdown--menu:hover{
+    background-color: rgb(107, 105, 105);
+}
+
+
+
+/* Home */
+.home>h1{display: none;}
+
+.home{
+    min-height: 91.6vh;
+    padding-top: 70px;
+    background-color: #fadc9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logoText{
+    width: 30%;
+}
+
+#arrow{
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: rgba(102, 102, 102, 0.842);
+    position: relative;
+    animation-name: arrow--up--down;
+    animation-duration:1.5s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes arrow--up--down{
+    0% {top:.1em}
+    50% {top:0}
+    100% {down:.1em}
+}
+
+
+/* Inhalt */
+
+.inhalt{
+    margin: 0 20%;
+    padding: 2em 0;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.inhalt p{
+    font-size: 1.5rem;
+    text-align: justify;
+	text-align-last: none;
+    margin: 2rem 0;
+}
+
+#zitat{
+    background-color: #fadc9c9c;
+    width: 60em;
+    padding: 0.3em;
+    border-left: 4px solid black;
+}
+
+button{
+    font-size: 1.2rem;
+    border: none;
+    background-color: rgb(255, 100, 73);
+    color: white;
+    padding: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.11); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.11);
+}
+
+
+
+/* form */
+
+.kontakt--formula{
+    padding: 8em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+input[type=text], input[type=email]{
+    height: 5vh;
+}
+
+input[type=text], input[type=email], textarea{
+    width: 100%;
+}
+
+input[type=text], input[type=email], textarea, input[type=checkbox], button {
+    margin-top: 2em;
+    padding: 1rem;
+}
+   
+
+form button{
+    width: 30%;
+       
+}
+
+
+#datenschutz{
+   text-align: center;
+}
+
+
+
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    background-color: rgb(26, 26, 26);
+    align-items: center;
+}
+
+footer li{
+   list-style: none;
+    margin: 1em 0;
+    
+}
+
+footer a {
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.footer--button{
+    padding: 0.1rem 0.3rem;
+    width: 100%;
+}
+
+.footer--button:hover{
+    background-color: rgb(107, 105, 105);
+    
+}
+
+
