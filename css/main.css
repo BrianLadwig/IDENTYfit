@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-body{
+body {
     background-color: rgb(255, 255, 255);
     min-height: 100vh;
 }
@@ -17,27 +19,29 @@ body{
 
 /* Nav-Bar */
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(26, 26, 26);
-    padding: 10px 70px;
+    padding: 10px 40px;
     position: sticky;
     top: 0;
     z-index: 5;
 }
 
-nav a img{height: 60px;}
+nav img {
+    height: 60px;
+}
 
 
-nav>ul>li{
+nav>ul>li {
     padding: 1em;
     font-weight: bold;
     list-style: none;
     display: inline;
     color: rgb(255, 255, 255);
-      
+
 }
 
 nav>ul>li>a{
@@ -47,23 +51,29 @@ nav>ul>li>a{
 }
 
 
+#nav--menu {
 
-li:hover{
+    display: none;
+
+}
+
+
+li:hover {
     background-color: #fdfcc4;
     color: black;
 }
 
-li:hover a{
+li:hover a {
     color: black;
 }
 
 
-li:hover #workshop--dropdown{
-display: block;
+li:hover #workshop--dropdown {
+    display: block;
 
 }
 
-#dropdown--arrow{
+#dropdown--arrow {
     color: rgb(167, 162, 162);
 }
 
@@ -72,41 +82,98 @@ display: block;
     list-style: none;
     background-color: rgb(31, 30, 30);
     position: absolute;
+    display: none;
     right: 16.2em;
     top: 3.5em;
-    display: none;
     border: 2px solid black;
 }
 
-#workshop--dropdown a{
+#workshop--dropdown a {
     color: white;
     text-decoration: none;
+     
 }
 
 
-.dropdown--menu{
+.dropdown--menu {
     padding: 1em;
 }
 
-#dropdown--menu--2{
+#dropdown--menu--2 {
     border-top: 1px solid rgb(255, 255, 255);
     border-bottom: 1px solid rgb(255, 255, 255);
-    
+
 }
 
-.dropdown--menu:hover{
+.dropdown--menu:hover {
     background-color: #fdfcc4;
     color: black;
 }
 
+#burger{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
 
+#burger span{
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    
+}
 
+#line1{
+   top: 30px; 
+}
 
+#line2{
+    top: 40px;
+}
+
+#line3{
+    top: 50px;
+}
+
+#burger--menu{
+    background-color: rgb(26, 26, 26);
+    border: 2px solid rgb(26, 26, 26) ;
+    position: absolute;
+    top: 5em;
+    right: 0;
+    
+}
+
+.show{
+    display:none;
+}
+
+#burger--menu ul{
+  list-style: none;
+}
+
+#burger--menu li {
+    padding: 1em;
+}
+
+#burger--menu a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#burger--menu li:hover a{
+    color: black;
+}
 
 /* Home */
-.home>h1{display: none;}
+.home > h1 {
+    display: none;
+}
 
-.home{
+.home {
     min-height: 91.2vh;
     padding-top: 70px;
     background-color: #fdfcc4;
@@ -116,31 +183,40 @@ display: block;
     flex-direction: column;
 }
 
-#logoText{
-    width: 25%;
+#logoText {
+    margin-top: 5em;
+    width: 20rem;
 }
 
-#arrow{
+#arrow {
     font-size: 2rem;
-    margin-top: 6rem;
+    margin-top: 12rem;
     color: rgba(102, 102, 102, 0.842);
     position: relative;
     animation-name: arrow--up--down;
-    animation-duration:1.5s ;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes arrow--up--down{
-    0% {top:.1em}
-    50% {top:0}
-    100% {down:.1em}
+@keyframes arrow--up--down {
+    0% {
+        top: .1em
+    }
+
+    50% {
+        top: 0
+    }
+
+    100% {
+        down: .1em
+    }
 }
 
 
 /* Inhalt */
 
-.inhalt{
+.inhalt {
     margin: 0 13%;
     padding: 2em 0;
     min-height: 90vh;
@@ -148,10 +224,10 @@ display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+
 }
 
-.inhalt p{
+.inhalt p {
     font-size: 1.3rem;
     text-align: justify;
     hyphens: auto;
@@ -159,13 +235,13 @@ display: block;
     line-height: 2rem;
 }
 
-#zitat{
+#zitat {
     background-color: #fdfcc4;
     padding: 0.3em;
-    
+
 }
 
-button{
+button {
     font-size: 1.2rem;
     border: none;
     background-color: #070707;
@@ -173,64 +249,71 @@ button{
     padding: 1em;
     font-weight: bolder;
     cursor: pointer;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.11); 
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.11);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.11);
 }
 
-button:hover{
-    background-color:#fdfcc4;
+button:hover {
+    background-color: #fdfcc4;
     color: black;
 }
 
 
 /* form */
 
-.kontakt--formula{
+.kontakt--formula {
     padding: 8em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
 
 
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 60%;
 }
 
-input[type=text], input[type=email]{
+input[type=text],
+input[type=email] {
     height: 5vh;
 }
 
-input[type=text], input[type=email], textarea{
+input[type=text],
+input[type=email],
+textarea {
     width: 100%;
 }
 
-input[type=text], input[type=email], textarea, input[type=checkbox], button {
+input[type=text],
+input[type=email],
+textarea,
+input[type=checkbox],
+button {
     margin-top: 2em;
     padding: 1rem;
 }
-   
 
-form button{
+
+form button {
     width: 10em;
-       
+
 }
 
 
-#datenschutz{
-   text-align: center;
+#datenschutz {
+    text-align: center;
 }
 
 
 
 
 /* footer */
-footer{
+footer {
     display: flex;
     justify-content: center;
     padding: 1em 0;
@@ -238,10 +321,10 @@ footer{
     align-items: center;
 }
 
-footer li{
-   list-style: none;
+footer li {
+    list-style: none;
     margin: 1em 0;
-    
+
 }
 
 footer a {
@@ -252,15 +335,51 @@ footer a {
 }
 
 
-.footer--button{
+.footer--button {
     padding: 0.1rem 0.3rem;
     width: 100%;
 }
 
-.footer--button:hover{
+.footer--button:hover {
     background-color: #fdfcc4;
     color: black;
-    
+
 }
 
 
+
+@media only screen and (min-width: 600px) {}
+
+@media only screen and (min-width: 1000px) {
+
+
+
+    nav{
+        padding: 10px 70px;  
+    }
+
+
+    #nav--menu {
+        display: block;
+    }
+
+    #logoText {
+        margin-top: 0;
+        width: 30em;
+    }
+
+    #arrow{
+        margin-top: 3em;
+    }
+
+    #burger{
+        display: none;
+    }
+
+form{
+    width: 30%; 
+}
+
+
+
+}
