@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+   
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -83,8 +82,8 @@ li:hover #workshop--dropdown {
     background-color: rgb(31, 30, 30);
     position: absolute;
     display: none;
-    right: 16.2em;
-    top: 3.5em;
+    right: 16.3em;
+    top: 3.6em;
     border: 2px solid black;
 }
 
@@ -183,6 +182,7 @@ li:hover #workshop--dropdown {
     flex-direction: column;
 }
 
+
 #logoText {
     margin-top: 5em;
     width: 20rem;
@@ -241,7 +241,7 @@ li:hover #workshop--dropdown {
 
 }
 
-button {
+button{
     font-size: 1.2rem;
     border: none;
     background-color: #070707;
@@ -253,11 +253,21 @@ button {
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.11);
 }
 
-button:hover {
+button:hover, .inhalt .workshop--button:hover {
     background-color: #fdfcc4;
     color: black;
 }
 
+.inhalt .workshop--button{
+    margin: .5em;
+    text-decoration: none;
+    background-color: #070707;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 1em;
+    width: 20em;
+    text-align: center;
+}
 
 /* form */
 
@@ -346,12 +356,13 @@ footer a {
     font-weight: bold;
     text-align: center;
     margin:0 1em;
+
 }
 
 
 .footer--button {
-    padding: 0.1rem 0.3rem;
-    width: 20em;
+    padding: 0.5rem 0;
+    width: 15em;
 }
 
 .footer--button:hover {
