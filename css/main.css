@@ -228,7 +228,7 @@ li:hover #workshop--dropdown {
 }
 
 .inhalt p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
     hyphens: auto;
     margin: 2rem 0;
@@ -326,7 +326,7 @@ form button {
 
 /* footer */
 footer {
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     padding: 1em 0;
     background-color: rgb(26, 26, 26);
@@ -393,12 +393,7 @@ form{
     width: 30%; 
 }
 
-footer{
-   
-        display: flex;
-        justify-content: center;
-    
-}
+
 
 
 }
