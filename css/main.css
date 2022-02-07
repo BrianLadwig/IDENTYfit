@@ -229,7 +229,6 @@ li:hover #workshop--dropdown {
 
 .inhalt p {
     font-size: 1rem;
-    text-align: justify;
     hyphens: auto;
     margin: 2rem 0;
     line-height: 2.3rem;
@@ -256,6 +255,12 @@ button{
 button:hover, .inhalt .workshop--button:hover {
     background-color: #fdfcc4;
     color: black;
+}
+
+#workshop--buttons{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 .inhalt .workshop--button{
@@ -359,6 +364,11 @@ footer a {
 
 }
 
+footer i {
+    font-size: 1.3em;
+    
+}
+
 
 .footer--button {
     padding: 0.5rem 0;
@@ -396,6 +406,12 @@ footer a {
     #arrow{
         margin-top: 3em;
     }
+
+
+    .inhalt p {
+        text-align: justify;
+    }
+
 
     #burger{
         display: none;
