@@ -77,13 +77,13 @@ li:hover #workshop--dropdown {
 }
 
 #workshop--dropdown{
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     list-style: none;
     background-color: rgb(31, 30, 30);
     position: absolute;
     display: none;
-    right: 7.8em;
-    top: 3.6em;
+    right: 18.3em;
+    top: 4.3em;
     border: 2px solid black;
 }
 
