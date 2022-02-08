@@ -173,8 +173,9 @@ li:hover #workshop--dropdown {
 }
 
 .home {
+    height: 100vh;
     min-height: 91.2vh;
-    padding-top: 70px;
+    padding-top: 1em;
     background-color: #fdfcc4;
     display: flex;
     justify-content: center;
@@ -184,32 +185,32 @@ li:hover #workshop--dropdown {
 
 
 #logoText {
-    margin-top: 5em;
-    width: 20rem;
+    margin-bottom: 5em;
+    width: 20em;
 }
 
 #arrow {
     font-size: 2rem;
-    margin-top: 12rem;
     color: rgba(102, 102, 102, 0.842);
-    position: relative;
+    position: absolute;
+    bottom:20px;
     animation-name: arrow--up--down;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 @keyframes arrow--up--down {
     0% {
-        top: .1em
+        bottom: 1.5em
     }
 
     50% {
-        top: 0
+        bottom: 1.2em
     }
 
     100% {
-        down: .1em
+        bottom: 1.5em
     }
 }
 
