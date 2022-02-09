@@ -34,35 +34,34 @@ nav img {
 }
 
 
-nav>ul>li {
+nav>ul>a, #workshop--btn {
     padding: 1em;
-    /* font-weight: bold; */
-    list-style: none;
-    display: inline;
-    color: rgb(255, 255, 255);
-
-}
-
-nav>ul>li>a{
-    color: white;
     text-decoration: none;
+    color: rgb(255, 255, 255);
     margin: 0 20px;
 }
 
-
-#nav--menu {
-
-    display: none;
-
+nav li{
+    color: white;
+    list-style: none;
+    display: inline;
 }
 
 
-li:hover {
+
+
+#nav--menu {
+    display: none;
+}
+
+
+nav>ul a:hover, #workshop--btn:hover  {
     background-color: #fdfcc4;
     color: black;
 }
 
-li:hover a {
+nav a:hover li {
+    background-color: #fdfcc4;
     color: black;
 }
 
@@ -77,13 +76,12 @@ li:hover #workshop--dropdown {
 }
 
 #workshop--dropdown{
-    /* font-size: 1.2rem; */
     list-style: none;
     background-color: rgb(31, 30, 30);
     position: absolute;
     display: none;
-    right: 18.3em;
-    top: 4.3em;
+    right: 19.4em;
+    top: 4em;
     border: 2px solid black;
 }
 
@@ -155,17 +153,17 @@ li:hover #workshop--dropdown {
 
 #burger--menu li {
     padding: 1em;
+    display: block;
 }
 
 #burger--menu a{
-    font-weight: bold;
     color: white;
     text-decoration: none;
 }
 
-#burger--menu li:hover a{
+/* #burger--menu li:hover a{
     color: black;
-}
+} */
 
 /* Home */
 .home > h1 {
@@ -189,7 +187,7 @@ li:hover #workshop--dropdown {
     width: 20em;
 }
 
-#arrow {
+/* #arrow {
     font-size: 2rem;
     color: rgba(102, 102, 102, 0.842);
     position: absolute;
@@ -212,7 +210,7 @@ li:hover #workshop--dropdown {
     100% {
         bottom: 1.5em
     }
-}
+} */
 
 
 /* Inhalt */
@@ -242,12 +240,11 @@ li:hover #workshop--dropdown {
 }
 
 button{
-    font-size: 1.2rem;
+    font-size: 1em;
     border: none;
     background-color: #070707;
     color: #ffffff;
     padding: 1em;
-    /* font-weight: bolder; */
     cursor: pointer;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.11);
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.11);
@@ -264,15 +261,17 @@ button:hover, .inhalt .workshop--button:hover {
     flex-direction: column;
 }
 
-.inhalt .workshop--button{
+.workshop--button{
+    font-size: .9rem;
     margin: .5em;
     text-decoration: none;
     background-color: #070707;
     color: #ffffff;
-    /* font-weight: bolder; */
     padding: 1em;
     width: 20em;
     text-align: center;
+    border-radius: 3px;
+   
 }
 
 /* form */
@@ -359,7 +358,6 @@ footer li {
 footer a {
     color: rgb(221, 221, 221);
     text-decoration: none;
-    /* font-weight: bold; */
     text-align: center;
     margin:0 1em;
 
@@ -384,16 +382,14 @@ footer i {
 
 
 
-@media only screen and (max-height: 600px) {
-    #arrow {display: none;}
-}
+
 
 @media only screen and (min-width: 1000px) {
 
 
 
     nav{
-        padding: 10px 70px;  
+        padding: 5px 70px;  
     }
 
 
