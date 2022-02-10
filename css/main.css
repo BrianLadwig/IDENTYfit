@@ -215,7 +215,7 @@ li:hover #workshop--dropdown {
 /* Inhalt */
 
 .inhalt {
-    
+    padding-bottom: 2em;
     margin: 0 13%;
     min-height: 90vh;
     display: flex;
